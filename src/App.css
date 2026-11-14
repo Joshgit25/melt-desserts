@@ -1,0 +1,413 @@
+/* Bootstrap is imported in App.jsx — this file only holds the MELT theme. */
+:root {
+  --font-display: "Bricolage Grotesque", ui-sans-serif, system-ui, sans-serif;
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --melt-cream-canvas: #FCF5C7;
+  --melt-cream-surface: #FFFBE6;
+  --melt-cream-muted: #F3E9AE;
+  --melt-indigo: #2D2584;
+  --melt-indigo-deep: #1D175B;
+  --melt-indigo-bright: #3F35A3;
+  --melt-waffle-gold: #D9822B;
+  --melt-waffle-crust: #B86016;
+
+  --bs-body-font-family: var(--font-sans);
+  --bs-body-bg: var(--melt-cream-canvas);
+  --bs-body-color: var(--melt-indigo-deep);
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  background: var(--melt-cream-canvas);
+  color: var(--melt-indigo-deep);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.font-display {
+  font-family: var(--font-display);
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+.min-w-0 {
+  min-width: 0;
+}
+
+/* ---------- colour helpers ---------- */
+.melt-indigo {
+  color: var(--melt-indigo);
+}
+
+.melt-crust {
+  color: var(--melt-waffle-crust);
+}
+
+.melt-cream {
+  color: var(--melt-cream-canvas);
+}
+
+.melt-muted {
+  color: rgba(29, 23, 91, 0.75);
+}
+
+.melt-border {
+  border-color: rgba(45, 37, 132, 0.12) !important;
+}
+
+.melt-band {
+  background: rgba(247, 238, 178, 0.55);
+}
+
+.melt-well {
+  background: var(--melt-cream-canvas);
+}
+
+/* ---------- header ---------- */
+.melt-header {
+  background: rgba(252, 245, 199, 0.95);
+  backdrop-filter: blur(6px);
+  border-bottom: 1px solid rgba(45, 37, 132, 0.12);
+}
+
+.melt-logo {
+  font-family: var(--font-display);
+  font-size: 1.65rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: var(--melt-indigo);
+}
+
+.melt-navlink {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: rgba(29, 23, 91, 0.8);
+  white-space: nowrap;
+}
+
+.melt-navlink:hover {
+  color: var(--melt-indigo);
+  text-decoration: underline !important;
+  text-underline-offset: 4px;
+  text-decoration-thickness: 2px;
+}
+
+.melt-icon-btn {
+  color: var(--melt-indigo);
+  border: 1px solid rgba(45, 37, 132, 0.25);
+}
+
+/* ---------- buttons ---------- */
+.melt-btn-primary {
+  background: var(--melt-indigo);
+  color: var(--melt-cream-surface);
+  border: 1px solid var(--melt-indigo);
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.melt-btn-primary:hover,
+.melt-btn-primary:focus-visible {
+  background: var(--melt-indigo-bright);
+  border-color: var(--melt-indigo-bright);
+  color: var(--melt-cream-surface);
+}
+
+.melt-btn-accent {
+  background: var(--melt-waffle-gold);
+  color: var(--melt-cream-surface);
+  border: 1px solid var(--melt-waffle-gold);
+  font-weight: 600;
+}
+
+.melt-btn-accent:hover {
+  background: var(--melt-waffle-crust);
+  border-color: var(--melt-waffle-crust);
+  color: var(--melt-cream-surface);
+}
+
+.melt-btn-outline {
+  background: var(--melt-cream-surface);
+  color: var(--melt-indigo);
+  border: 1px solid rgba(45, 37, 132, 0.3);
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.melt-btn-outline:hover {
+  border-color: var(--melt-indigo);
+  color: var(--melt-indigo);
+  background: var(--melt-cream-surface);
+}
+
+/* ---------- hero ---------- */
+.melt-topstrip {
+  background: var(--melt-indigo);
+  color: rgba(255, 251, 230, 0.9);
+  font-size: 0.8rem;
+}
+
+.melt-eyebrow {
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: var(--melt-indigo);
+}
+
+.melt-h1 {
+  font-size: clamp(2.2rem, 5vw, 3.4rem);
+  font-weight: 800;
+  line-height: 1.06;
+  letter-spacing: -0.02em;
+  text-wrap: balance;
+}
+
+.melt-h2 {
+  font-size: clamp(1.7rem, 3.4vw, 2.3rem);
+  font-weight: 800;
+  letter-spacing: -0.015em;
+  text-wrap: balance;
+}
+
+/* ---------- cards ---------- */
+.melt-card {
+  background: var(--melt-cream-surface);
+  border: 1px solid rgba(45, 37, 132, 0.14);
+  border-radius: 1rem;
+  box-shadow: 0 8px 24px rgba(29, 23, 91, 0.06);
+}
+
+.melt-hover {
+  transition: transform 0.15s ease;
+}
+
+.melt-hover:hover {
+  transform: translateY(-2px);
+}
+
+/* ---------- segmented controls ---------- */
+.melt-seg {
+  background: var(--melt-cream-muted);
+  border: 1px solid rgba(45, 37, 132, 0.12);
+  padding: 4px;
+  border-radius: 0.6rem;
+}
+
+.melt-seg-btn {
+  color: rgba(29, 23, 91, 0.8);
+  font-weight: 600;
+  font-size: 0.75rem;
+  border: 0;
+  border-radius: 0.4rem;
+  white-space: nowrap;
+}
+
+.melt-seg-btn:hover {
+  color: var(--melt-indigo);
+}
+
+.melt-seg-btn.active {
+  background: var(--melt-indigo);
+  color: var(--melt-cream-surface);
+}
+
+.melt-seg-btn.active.accent {
+  background: var(--melt-waffle-gold);
+}
+
+/* ---------- chips & options ---------- */
+.melt-chip {
+  font-size: 0.72rem;
+  font-weight: 600;
+  padding: 0.35rem 0.25rem;
+  background: rgba(252, 245, 199, 0.7);
+  color: var(--melt-indigo-deep);
+  border: 1px solid rgba(45, 37, 132, 0.15);
+  white-space: nowrap;
+}
+
+.melt-chip:hover {
+  border-color: rgba(45, 37, 132, 0.45);
+}
+
+.melt-chip.active {
+  background: var(--melt-indigo);
+  color: var(--melt-cream-surface);
+  border-color: var(--melt-indigo);
+}
+
+.melt-option {
+  background: rgba(252, 245, 199, 0.6);
+  color: var(--melt-indigo-deep);
+  border: 1px solid rgba(45, 37, 132, 0.15);
+  transition: border-color 0.15s, background 0.15s;
+}
+
+.melt-option:hover {
+  border-color: rgba(45, 37, 132, 0.45);
+}
+
+.melt-option.active {
+  background: var(--melt-indigo);
+  color: var(--melt-cream-surface);
+  border-color: var(--melt-indigo);
+}
+
+.melt-batter-card {
+  background: var(--melt-cream-surface);
+  color: var(--melt-indigo-deep);
+  border: 1px solid rgba(45, 37, 132, 0.15);
+  transition: border-color 0.15s;
+}
+
+.melt-batter-card:hover {
+  border-color: rgba(45, 37, 132, 0.45);
+}
+
+.melt-batter-card.active {
+  background: var(--melt-indigo);
+  color: var(--melt-cream-surface);
+  border-color: var(--melt-indigo);
+  box-shadow: 0 10px 24px rgba(29, 23, 91, 0.16);
+}
+
+.melt-swatch {
+  width: 28px;
+  height: 28px;
+  border-radius: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  flex-shrink: 0;
+}
+
+/* ---------- waffle visuals ---------- */
+.waffle-visual {
+  display: inline-block;
+}
+
+.waffle-sm {
+  width: 110px;
+  height: 110px;
+}
+
+.waffle-md {
+  width: 160px;
+  height: 160px;
+}
+
+.waffle-lg {
+  width: 260px;
+  height: 260px;
+}
+
+@media (min-width: 576px) {
+  .waffle-lg {
+    width: 290px;
+    height: 290px;
+  }
+}
+
+.waffle-stack {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.waffle-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  user-select: none;
+  transition: filter 0.25s ease;
+}
+
+.waffle-overlay {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.waffle-wedge {
+  width: 100%;
+  height: 100%;
+  user-select: none;
+}
+
+/* ---------- footer ---------- */
+.melt-footer {
+  background: var(--melt-indigo);
+  color: var(--melt-cream-surface);
+}
+
+.melt-footer-border {
+  border-color: rgba(255, 251, 230, 0.15) !important;
+}
+
+.melt-footer-link {
+  color: rgba(255, 251, 230, 0.8);
+  text-decoration: none;
+  transition: color 0.15s;
+}
+
+.melt-footer-link:hover {
+  color: var(--melt-cream-canvas);
+}
+
+.melt-footer-btn {
+  background: rgba(255, 251, 230, 0.12);
+  color: var(--melt-cream-canvas);
+  font-weight: 600;
+  border: 0;
+}
+
+.melt-footer-btn:hover {
+  background: rgba(255, 251, 230, 0.2);
+  color: var(--melt-cream-canvas);
+}
+
+/* ---------- modal ---------- */
+.modal {
+  background: rgba(29, 23, 91, 0.45);
+}
+
+.modal-backdrop.show {
+  background: var(--melt-indigo-deep);
+  opacity: 0.6;
+}
+
+.melt-modal {
+  background: var(--melt-cream-surface);
+  border: 1px solid rgba(45, 37, 132, 0.25);
+  border-radius: 1rem;
+}
+
+/* ---------- a11y ---------- */
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid var(--melt-indigo);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
