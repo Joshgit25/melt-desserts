@@ -24,6 +24,7 @@ html {
 body {
   background: var(--melt-cream-canvas);
   color: var(--melt-indigo-deep);
+  user-select: none;
 }
 
 h1,
